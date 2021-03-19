@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>data_selfie/google</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="src/favico_1.gif" type="image/gif" >
+  <link rel='stylesheet' href='style/bootstrap.min.css'>
+  <link rel="stylesheet" href="style/style_g.css">
+  <link rel='stylesheet' href='style/fullPage.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+
+<span class="marquee top">
+  <ul class="breadcrumb">
+  <li class="breadcrumb-item active"><a href="index.html">data_selfie</a></li>
+  <li class="breadcrumb-item" aria-current="page">google</li>
+</ul>
+</span>
+
+<div id="mySidebar" class="sidebar bounce-3" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+    <a data-menuanchor="slide1" class="btn-menu" href="#slide1">Search</a>
+    <a data-menuanchor="slide2" class="btn-menu" href="#slide2">Position Activity</a>
+    <a data-menuanchor="slide3" class="btn-menu" href="#slide3">Youtube</a>
+    <a data-menuanchor="slide4" class="btn-menu" href="#slide4">Google +</a>
+    <a href="index.html" class="back">&lt; <u> B</u>ack</a>
+</div>
+
+<nav id="mySidebar2" class="navbar  ">
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav ">
+<a class="drop-icon" data-toggle="dropdown" href="#"  aria-haspopup="true" aria-expanded="false"> > </a>
+  <li class="dropdown w-100">
+
+    <div class="dropdown-menu w-100">
+      <a data-menuanchor="slide1" class="btn-menu" href="#slide1">Search</a>
+      <a data-menuanchor="slide2" class="btn-menu" href="#slide2">Position Activity</a>
+      <a data-menuanchor="slide3" class="btn-menu" href="#slide3">Youtube</a>
+      <a data-menuanchor="slide4" class="btn-menu" href="#slide4">Google +</a>
+      <a href="index.html" class="btn-menu"><u> B</u>ack</a>
+    </div>
+  </li>
+</ul>
+</nav>
+
+
+<div id="fullpage">
+    <div class="section" data-anchor="slide0">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+            we own over </br>
+            <span class="open data2">40 GIGA<img src="src/data2.gif"></span> </br>
+           of your data
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide1">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class=" col col-12 sentence">
+            we have saved 162.479 of your searches. just because you use <span class="open trap">Incognito mode<img src="src/trap.gif"></span> doesn't mean we don't know you visit <span class="open">youporn</span>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide2">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+            we've tracked your location <span class="open">182626 times</span> </br>since Nov 2012 until May 2018.</br></br>
+            but now that you use a <span class="open vpn">VPN<img src="src/vpn.gif"></span> we can't find you anymore
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide3">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+             <span class="open">you have watched almost 30'500 video</span></br> you have spent aprox. <span class="open yt">210 days<img src="src/youtube.gif"></span> watching youtube instead of working.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide4">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+            <span class="open google">Google+ <img src="src/googleplus.gif">  is no longer available</span></br>
+            The whole team Thank you for helping to make Google+ such a special place.
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<span class="marquee bottom"></span>
+
+
+<!-- Script -->
+<script src="script/fullpage.js"></script>
+<script src='script/jquery-3.4.1.min.js'></script>
+<script src='script/bootstrap.min.js'></script>
+<script src="script/script_f.js"></script>
+<script>
+    var mini = true;
+
+    function toggleSidebar() {
+        if (mini) {
+            console.log("opening sidebar");
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("fullpage").style.marginLeft = "0px";
+            this.mini = false;
+        } else {
+            console.log("closing sidebar");
+            document.getElementById("mySidebar").style.width = "36px";
+            document.getElementById("fullpage").style.marginLeft = "0px";
+            this.mini = true;
+        }
+    }
+</script>
+
+
+</body>
+</html>

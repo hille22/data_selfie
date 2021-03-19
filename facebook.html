@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>data_selfie</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="src/favico_1.gif" type="image/gif" >
+  <link rel='stylesheet' href='style/bootstrap.min.css'>
+  <link rel="stylesheet" href="style/style_f.css">
+  <link rel='stylesheet' href='style/fullPage.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+
+<span class="marquee top">
+  <ul class="breadcrumb">
+  <li class="breadcrumb-item active"><a href="index.html">data_selfie</a></li>
+  <li class="breadcrumb-item" aria-current="page">facebook</li>
+</ul>
+</span>
+
+<div id="mySidebar" class="sidebar bounce-3" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+    <a data-menuanchor="slide1" class="btn-menu" href="#slide1">Likes</a>
+    <a data-menuanchor="slide2" class="btn-menu" href="#slide2">Search</a>
+    <a data-menuanchor="slide3" class="btn-menu" href="#slide3">Messages</a>
+    <a data-menuanchor="slide4" class="btn-menu" href="#slide4">Ads</a>
+    <a data-menuanchor="slide5" class="btn-menu" href="#slide5">IP</a>
+    <a href="index.html" class="back">&lt; <u> B</u>ack</a>
+</div>
+
+
+<nav id="mySidebar2" class="navbar  ">
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav" >
+    <a class="drop-icon " data-toggle="dropdown" href="#"  aria-haspopup="true" aria-expanded="false">&nbsp; &nbsp; > &nbsp; &nbsp;</a>
+      <li class="dropdown w-100">
+
+        <div class="dropdown-menu w-100">
+          <a data-menuanchor="slide1" class="btn-menu" href="#slide1">Likes</a>
+          <a data-menuanchor="slide2" class="btn-menu" href="#slide2">Search</a>
+          <a data-menuanchor="slide3" class="btn-menu" href="#slide3">Messages</a>
+          <a data-menuanchor="slide4" class="btn-menu" href="#slide4">Ads</a>
+          <a data-menuanchor="slide5" class="btn-menu" href="#slide5">IP</a>
+          <a href="index.html" class="btn-menu"><u> B</u>ack</a>
+        </div>
+      </li>
+</ul>
+</nav>
+
+<div id="fullpage">
+    <div class="section" data-anchor="slide0">
+      <div class="container-fluid">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+            <span class="open data">facebook<img src="src/data.gif"></span> has been collection your data since 2008. Here are 1.48 Giga of your personal data
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide1">
+      <div class="container-fluid ">
+        <div class="row">
+    <div class="col-6 col-sm-3  mx-auto"><p class="icon-p"><img class="icon" src="./src/love.png" alt="">41</div>
+    <div class="col-6 col-sm-3  mx-auto"><p class="icon-p"><img class="icon" src="./src/sorry.png" alt="">16</p></div>
+
+
+    <!-- Force next columns to break to new line -->
+    <div class="w-100"></div>
+
+    <div class="col-6 col-sm-3  mx-auto"><p class="icon-p"><img class="icon" src="./src/wow.png" alt="">53</p></div>
+    <div class="col-6 col-sm-3 mx-auto"><p class="icon-p"><img class="icon" src="./src/anger.png" alt="">12</p></div>
+    <div class="w-100"></div>
+
+    <div class="col-6 col-sm-3  mx-auto"><p class="icon-p"><img class="icon" src="./src/like.png" alt="">4231</p></div>
+    <div class="col-6 col-sm-3 mx-auto"><p class="icon-p"><img class="icon" src="./src/haha.png" alt="">82</p></div>
+
+  </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide2">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+           you've searched yourself<span class="open search"> 6 times...<img src="src/search.gif"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide3">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+            you have sent over 150.000 messages. we also know that you have texted your <span class="open exes">exes<img src="src/exes.gif"></span> 26.638 times.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide4">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+            did you honestly click <span class="open gay">on this ad ?<img src="src/gay.gif"></span></br> Clean Your Pores With This Face Vacuum
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide5">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+            places we thought you visited, <span class="open gay">but not really<img src="src/travolta.gif"></span>  : Atlanta, São Paulo, Atlantic ocean, Dubaï, ...
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<span class="marquee bottom"></span>
+
+
+<!-- Script -->
+<script src="script/fullpage.js"></script>
+<script src='script/jquery-3.4.1.min.js'></script>
+<script src='script/bootstrap.min.js'></script>
+<script src="script/script_f.js"></script>
+<script>
+    var mini = true;
+
+    function toggleSidebar() {
+        if (mini) {
+            console.log("opening sidebar");
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("fullpage").style.marginLeft = "0px";
+            this.mini = false;
+        } else {
+            console.log("closing sidebar");
+            document.getElementById("mySidebar").style.width = "36px";
+            document.getElementById("fullpage").style.marginLeft = "0px";
+            this.mini = true;
+        }
+    }
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

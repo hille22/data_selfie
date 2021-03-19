@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>data_selfie/instagram</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="src/favico_1.gif" type="image/gif" >
+  <link rel='stylesheet' href='style/bootstrap.min.css'>
+  <link rel="stylesheet" href="style/style_i.css">
+  <link rel='stylesheet' href='style/fullPage.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+
+<span class="marquee top">
+  <ul class="breadcrumb">
+  <li class="breadcrumb-item active"><a href="index.html">data_selfie</a></li>
+  <li class="breadcrumb-item" aria-current="page">instagram</li>
+</ul>
+</span>
+
+<div id="mySidebar" class="sidebar bounce-3" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+    <a data-menuanchor="slide1" class="btn-menu" href="#slide1">Likes</a>
+    <a data-menuanchor="slide2" class="btn-menu" href="#slide2">Messages</a>
+    <a data-menuanchor="slide3" class="btn-menu" href="#slide3">Search</a>
+    <a href="index.html" class="back">&lt; <u>B</u>ack</a>
+</div>
+
+<nav id="mySidebar2" class="navbar  ">
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav ">
+<a class="drop-icon" data-toggle="dropdown" href="#"  aria-haspopup="true" aria-expanded="false"> > </a>
+  <li class="dropdown w-100">
+
+    <div class="dropdown-menu w-100">
+      <a data-menuanchor="slide1" class="btn-menu" href="#slide1">Likes</a>
+      <a data-menuanchor="slide2" class="btn-menu" href="#slide2">Messages</a>
+      <a data-menuanchor="slide3" class="btn-menu" href="#slide3">Search</a>
+      <a href="index.html" class="btn-menu"><u> B</u>ack</a>
+    </div>
+  </li>
+</ul>
+</nav>
+
+<div id="fullpage">
+    <div class="section" data-anchor="slide0">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class=" col col-12 sentence">
+            you really thought that converting to a <span class="open facepalm">business account<img src="src/facepalm.gif"></span> would boost your visibility
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide1">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class=" col col-12 sentence">
+            nobody cares about your <span class="open likes">likes. <img src="src/like.gif"></span></br>
+            they will be hidden in the next update.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide2">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+            you have sent over 8000 messages.</br>
+            most of them are <span class="open repost">reposted memes...<img src="src/repost.jpg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="slide3">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class=" col col-12 sentence">
+            You have searched for <span class="open emrata">@emrata<img src="src/emrata.gif"></span> 5 times, and yes, we know why...
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+<span class="marquee bottom"></span>
+
+
+<!-- Script -->
+<script src="script/fullpage.js"></script>
+<script src='script/jquery-3.4.1.min.js'></script>
+<script src='script/bootstrap.min.js'></script>
+<script src="script/script_f.js"></script>
+<script>
+    var mini = true;
+
+    function toggleSidebar() {
+        if (mini) {
+            console.log("opening sidebar");
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("fullpage").style.marginLeft = "0px";
+            this.mini = false;
+        } else {
+            console.log("closing sidebar");
+            document.getElementById("mySidebar").style.width = "36px";
+            document.getElementById("fullpage").style.marginLeft = "0px";
+            this.mini = true;
+        }
+    }
+</script>
+
+
+</body>
+</html>
